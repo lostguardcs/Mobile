@@ -1,0 +1,38 @@
+*.gitattributes text
+.gitignore      text
+*.md            text diff=markdown
+
+.gitattributes  export-ignore
+.gitignore      export-ignore
+
+*.gitattributes linguist-language=gitattributes
+*.gitattributes linguist-detectable=true
+*.gitattributes linguist-documentation=false
+
+*.vim text eol=lf
+.vimrc text eol=lf
+.gvimrc text eol=lf
+
+**/testData/** linguist-vendored
+*Generated.java linguist-generated=true
+*.kt.txt linguist-language=Kotlin
+*.klib_abi.txt linguist-language=Kotlin
+* text=auto
+* eol=lf
+*.png binary
+*.jar binary
+compiler/cli/bin/* eol=lf
+compiler/cli/bin/*.bat eol=crlf
+gradlew.bat eol=crlf
+compiler/testData/** eol=auto
+*.jpg filter=lfs diff=lfs merge=lfs -text
+
+LICENSE.txt eol=crlf
+ThirdPartyNotices.txt eol=crlf
+
+*.bat eol=crlf
+*.cmd eol=crlf
+*.ps1 eol=lf
+*.sh eol=lf
+*.rtf -text
+**/*.json linguist-language=jsonc
